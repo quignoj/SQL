@@ -1,0 +1,20 @@
+Check out my store database here. I've described each piece of code (first I created a store database, then displayed the database ordered by cost. I also provided the sum for all items in the store)
+CREATE TABLE store (ID INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, color TEXT, cost INTEGER, aisle INTEGER);
+INSERT INTO STORE VALUES (1, "shirt", 50,"blue", 25, 3);
+INSERT INTO STORE VALUES (2, "jeans", 25, "jean", 35, 3);
+INSERT INTO STORE VALUES (3, "t-shirt", 30, "gray", 20, 3);
+INSERT INTO STORE VALUES (4, "skirt", 33, "purple", 35, 4);
+INSERT INTO STORE VALUES (5, "hat", 50, "white", 20, 4);
+INSERT INTO STORE VALUES (6, "necklace", 25, "gold", 45, 6);
+INSERT INTO STORE VALUES (7, "shoes", 30, "red", 50, 7);
+INSERT INTO STORE VALUES (8, "tank top", 5, "orange", 15, 7);
+INSERT INTO STORE VALUES (9, "bra", 30, "black", 35, 1);
+INSERT INTO STORE VALUES (10, "socks", 30, "white", 10, 1);
+INSERT INTO STORE VALUES (11, "clip", 15, "black", 12, 2);
+INSERT INTO STORE VALUES (12, "scrunchie", 12, "multicolor", 10, 2);
+INSERT INTO STORE VALUES (13, "crop top", 10, "blue", 15, 3);
+INSERT INTO STORE VALUES (14, "coat", 5, "red", 60, 3);
+INSERT INTO STORE VALUES (15, "scarf", 5, "gray", 25, 3);
+SELECT * FROM store
+Order by cost;
+Select SUM(cost*quantity) from store;
